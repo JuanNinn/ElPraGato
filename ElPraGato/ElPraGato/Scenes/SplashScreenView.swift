@@ -10,7 +10,6 @@ import SwiftUI
 struct SplashScreenView: View {
     @State var isActive : Bool = false
     
-    // Customise your SplashScreen here
     var body: some View {
         if isActive {
             MainGatoView()

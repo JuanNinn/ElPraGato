@@ -17,7 +17,7 @@ struct MainGatoView: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct MainGatoView_Previews: PreviewProvider {
     static var previews: some View {
         MainGatoView()
             .previewDevice("iPhone 14")
