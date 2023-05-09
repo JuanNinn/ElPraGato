@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		33878AA22A0AA4D10086705B /* ElPraGatoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33878AA12A0AA4D10086705B /* ElPraGatoApp.swift */; };
-		33878AA42A0AA4D10086705B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33878AA32A0AA4D10086705B /* ContentView.swift */; };
+		33878AA42A0AA4D10086705B /* MainGatoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33878AA32A0AA4D10086705B /* MainGatoView.swift */; };
 		33878AA62A0AA4D40086705B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33878AA52A0AA4D40086705B /* Assets.xcassets */; };
 		33878AAA2A0AA4D40086705B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33878AA92A0AA4D40086705B /* Preview Assets.xcassets */; };
 		33878AB42A0AA4D40086705B /* ElPraGatoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33878AB32A0AA4D40086705B /* ElPraGatoTests.swift */; };
 		33878ABE2A0AA4D50086705B /* ElPraGatoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33878ABD2A0AA4D50086705B /* ElPraGatoUITests.swift */; };
 		33878AC02A0AA4D50086705B /* ElPraGatoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33878ABF2A0AA4D50086705B /* ElPraGatoUITestsLaunchTests.swift */; };
+		33878ACE2A0AB5300086705B /* MainStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33878ACD2A0AB5300086705B /* MainStorage.swift */; };
+		33878AD52A0ACEAE0086705B /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33878AD42A0ACEAE0086705B /* SplashScreenView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +38,7 @@
 /* Begin PBXFileReference section */
 		33878A9E2A0AA4D10086705B /* ElPraGato.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ElPraGato.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		33878AA12A0AA4D10086705B /* ElPraGatoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElPraGatoApp.swift; sourceTree = "<group>"; };
-		33878AA32A0AA4D10086705B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		33878AA32A0AA4D10086705B /* MainGatoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainGatoView.swift; sourceTree = "<group>"; };
 		33878AA52A0AA4D40086705B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		33878AA72A0AA4D40086705B /* ElPraGato.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ElPraGato.entitlements; sourceTree = "<group>"; };
 		33878AA92A0AA4D40086705B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -45,6 +47,8 @@
 		33878AB92A0AA4D40086705B /* ElPraGatoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ElPraGatoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		33878ABD2A0AA4D50086705B /* ElPraGatoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElPraGatoUITests.swift; sourceTree = "<group>"; };
 		33878ABF2A0AA4D50086705B /* ElPraGatoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElPraGatoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		33878ACD2A0AB5300086705B /* MainStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainStorage.swift; sourceTree = "<group>"; };
+		33878AD42A0ACEAE0086705B /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,10 +99,12 @@
 		33878AA02A0AA4D10086705B /* ElPraGato */ = {
 			isa = PBXGroup;
 			children = (
-				33878AA12A0AA4D10086705B /* ElPraGatoApp.swift */,
-				33878AA32A0AA4D10086705B /* ContentView.swift */,
-				33878AA52A0AA4D40086705B /* Assets.xcassets */,
 				33878AA72A0AA4D40086705B /* ElPraGato.entitlements */,
+				33878AD02A0AB56B0086705B /* Assets */,
+				33878AD22A0AB6150086705B /* ViewModels */,
+				33878AD32A0AB6200086705B /* Models */,
+				33878ACF2A0AB5460086705B /* Scenes */,
+				33878ACC2A0AB5170086705B /* Storage */,
 				33878AA82A0AA4D40086705B /* Preview Content */,
 			);
 			path = ElPraGato;
@@ -127,6 +133,46 @@
 				33878ABF2A0AA4D50086705B /* ElPraGatoUITestsLaunchTests.swift */,
 			);
 			path = ElPraGatoUITests;
+			sourceTree = "<group>";
+		};
+		33878ACC2A0AB5170086705B /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				33878ACD2A0AB5300086705B /* MainStorage.swift */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		33878ACF2A0AB5460086705B /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				33878AA32A0AA4D10086705B /* MainGatoView.swift */,
+				33878AA12A0AA4D10086705B /* ElPraGatoApp.swift */,
+				33878AD42A0ACEAE0086705B /* SplashScreenView.swift */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		33878AD02A0AB56B0086705B /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				33878AA52A0AA4D40086705B /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		33878AD22A0AB6150086705B /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		33878AD32A0AB6200086705B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +305,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				33878AA42A0AA4D10086705B /* ContentView.swift in Sources */,
+				33878AD52A0ACEAE0086705B /* SplashScreenView.swift in Sources */,
+				33878AA42A0AA4D10086705B /* MainGatoView.swift in Sources */,
 				33878AA22A0AA4D10086705B /* ElPraGatoApp.swift in Sources */,
+				33878ACE2A0AB5300086705B /* MainStorage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
