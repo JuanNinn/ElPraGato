@@ -9,11 +9,22 @@ import SwiftUI
 
 struct MainGatoView: View {
     var body: some View {
-        VStack {
-            Text("equisdelol")
-                .font(.custom("Poppins-Bold", size: 40))
-                .foregroundColor(Color("MainFontColor"))
+        ZStack{
+            Color("PrimaryContainerColor")
+            VStack {
+                Button("Inicia la partida") {
+                    
+                }
+                .font(.custom("Poppins-Regular", size: 24))
+                .foregroundColor(Color(.black))
+                Spacer()
+                
+                Image("mainViewFooter")
+                
+            }
+            .padding(.vertical, 50)
         }
+        .ignoresSafeArea()
     }
 }
 

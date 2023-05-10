@@ -15,7 +15,6 @@
 		33878ABE2A0AA4D50086705B /* ElPraGatoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33878ABD2A0AA4D50086705B /* ElPraGatoUITests.swift */; };
 		33878AC02A0AA4D50086705B /* ElPraGatoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33878ABF2A0AA4D50086705B /* ElPraGatoUITestsLaunchTests.swift */; };
 		33878ACE2A0AB5300086705B /* MainStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33878ACD2A0AB5300086705B /* MainStorage.swift */; };
-		33878AD52A0ACEAE0086705B /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33878AD42A0ACEAE0086705B /* SplashScreenView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,7 +47,6 @@
 		33878ABD2A0AA4D50086705B /* ElPraGatoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElPraGatoUITests.swift; sourceTree = "<group>"; };
 		33878ABF2A0AA4D50086705B /* ElPraGatoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElPraGatoUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		33878ACD2A0AB5300086705B /* MainStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainStorage.swift; sourceTree = "<group>"; };
-		33878AD42A0ACEAE0086705B /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
 		33878ADB2A0BCA230086705B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		33878ADE2A0BCBEC0086705B /* OFL.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
 		33878ADF2A0BCBEC0086705B /* Poppins-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Black.ttf"; sourceTree = "<group>"; };
@@ -126,7 +124,6 @@
 				33878ACF2A0AB5460086705B /* Scenes */,
 				33878ACC2A0AB5170086705B /* Storage */,
 				33878AA82A0AA4D40086705B /* Preview Content */,
-				33878AD82A0BC87C0086705B /* projectFonts */,
 			);
 			path = ElPraGato;
 			sourceTree = "<group>";
@@ -169,7 +166,6 @@
 			children = (
 				33878AA32A0AA4D10086705B /* MainGatoView.swift */,
 				33878AA12A0AA4D10086705B /* ElPraGatoApp.swift */,
-				33878AD42A0ACEAE0086705B /* SplashScreenView.swift */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -177,6 +173,7 @@
 		33878AD02A0AB56B0086705B /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				33878AD82A0BC87C0086705B /* projectFonts */,
 				33878AA52A0AA4D40086705B /* Assets.xcassets */,
 			);
 			path = Assets;
@@ -351,7 +348,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				33878AD52A0ACEAE0086705B /* SplashScreenView.swift in Sources */,
 				33878AA42A0AA4D10086705B /* MainGatoView.swift in Sources */,
 				33878AA22A0AA4D10086705B /* ElPraGatoApp.swift in Sources */,
 				33878ACE2A0AB5300086705B /* MainStorage.swift in Sources */,
