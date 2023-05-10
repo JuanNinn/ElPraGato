@@ -49,6 +49,25 @@
 		33878ABF2A0AA4D50086705B /* ElPraGatoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElPraGatoUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		33878ACD2A0AB5300086705B /* MainStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainStorage.swift; sourceTree = "<group>"; };
 		33878AD42A0ACEAE0086705B /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
+		33878ADB2A0BCA230086705B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		33878ADE2A0BCBEC0086705B /* OFL.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
+		33878ADF2A0BCBEC0086705B /* Poppins-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Black.ttf"; sourceTree = "<group>"; };
+		33878AE02A0BCBEC0086705B /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
+		33878AE12A0BCBEC0086705B /* Poppins-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-BlackItalic.ttf"; sourceTree = "<group>"; };
+		33878AE22A0BCBEC0086705B /* Poppins-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Medium.ttf"; sourceTree = "<group>"; };
+		33878AE32A0BCBEC0086705B /* Poppins-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ThinItalic.ttf"; sourceTree = "<group>"; };
+		33878AE42A0BCBEC0086705B /* Poppins-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraLight.ttf"; sourceTree = "<group>"; };
+		33878AE52A0BCBEC0086705B /* Poppins-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-BoldItalic.ttf"; sourceTree = "<group>"; };
+		33878AE62A0BCBEC0086705B /* Poppins-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraBold.ttf"; sourceTree = "<group>"; };
+		33878AE72A0BCBEC0086705B /* Poppins-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-MediumItalic.ttf"; sourceTree = "<group>"; };
+		33878AE82A0BCBEC0086705B /* Poppins-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		33878AE92A0BCBEC0086705B /* Poppins-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		33878AEA2A0BCBEC0086705B /* Poppins-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Italic.ttf"; sourceTree = "<group>"; };
+		33878AEB2A0BCBEC0086705B /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.ttf"; sourceTree = "<group>"; };
+		33878AEC2A0BCBEC0086705B /* Poppins-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Light.ttf"; sourceTree = "<group>"; };
+		33878AED2A0BCBED0086705B /* Poppins-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		33878AEE2A0BCBED0086705B /* Poppins-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Thin.ttf"; sourceTree = "<group>"; };
+		33878AEF2A0BCBED0086705B /* Poppins-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-LightItalic.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +118,7 @@
 		33878AA02A0AA4D10086705B /* ElPraGato */ = {
 			isa = PBXGroup;
 			children = (
+				33878ADB2A0BCA230086705B /* Info.plist */,
 				33878AA72A0AA4D40086705B /* ElPraGato.entitlements */,
 				33878AD02A0AB56B0086705B /* Assets */,
 				33878AD22A0AB6150086705B /* ViewModels */,
@@ -106,6 +126,7 @@
 				33878ACF2A0AB5460086705B /* Scenes */,
 				33878ACC2A0AB5170086705B /* Storage */,
 				33878AA82A0AA4D40086705B /* Preview Content */,
+				33878AD82A0BC87C0086705B /* projectFonts */,
 			);
 			path = ElPraGato;
 			sourceTree = "<group>";
@@ -173,6 +194,31 @@
 			children = (
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		33878AD82A0BC87C0086705B /* projectFonts */ = {
+			isa = PBXGroup;
+			children = (
+				33878ADE2A0BCBEC0086705B /* OFL.txt */,
+				33878ADF2A0BCBEC0086705B /* Poppins-Black.ttf */,
+				33878AE12A0BCBEC0086705B /* Poppins-BlackItalic.ttf */,
+				33878AE02A0BCBEC0086705B /* Poppins-Bold.ttf */,
+				33878AE52A0BCBEC0086705B /* Poppins-BoldItalic.ttf */,
+				33878AE62A0BCBEC0086705B /* Poppins-ExtraBold.ttf */,
+				33878AE82A0BCBEC0086705B /* Poppins-ExtraBoldItalic.ttf */,
+				33878AE42A0BCBEC0086705B /* Poppins-ExtraLight.ttf */,
+				33878AE92A0BCBEC0086705B /* Poppins-ExtraLightItalic.ttf */,
+				33878AEA2A0BCBEC0086705B /* Poppins-Italic.ttf */,
+				33878AEC2A0BCBEC0086705B /* Poppins-Light.ttf */,
+				33878AEF2A0BCBED0086705B /* Poppins-LightItalic.ttf */,
+				33878AE22A0BCBEC0086705B /* Poppins-Medium.ttf */,
+				33878AE72A0BCBEC0086705B /* Poppins-MediumItalic.ttf */,
+				33878AEB2A0BCBEC0086705B /* Poppins-Regular.ttf */,
+				33878AED2A0BCBED0086705B /* Poppins-SemiBoldItalic.ttf */,
+				33878AEE2A0BCBED0086705B /* Poppins-Thin.ttf */,
+				33878AE32A0BCBEC0086705B /* Poppins-ThinItalic.ttf */,
+			);
+			path = projectFonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -467,6 +513,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ElPraGato/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -505,6 +552,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ElPraGato/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;

@@ -11,8 +11,8 @@ struct MainGatoView: View {
     var body: some View {
         VStack {
             Text("equisdelol")
+                .font(.custom("Poppins-Bold", size: 40))
                 .foregroundColor(Color("MainFontColor"))
-                .font(.title)
         }
     }
 }
