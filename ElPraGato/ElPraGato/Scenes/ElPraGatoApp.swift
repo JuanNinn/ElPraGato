@@ -11,7 +11,7 @@ import SwiftUI
 struct ElPraGatoApp: App {
     var body: some Scene {
         WindowGroup {
-            MainGatoView()
+            MainGatoView.build()
         }
     }
 }
