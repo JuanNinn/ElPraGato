@@ -15,6 +15,8 @@
 		33878ABE2A0AA4D50086705B /* ElPraGatoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33878ABD2A0AA4D50086705B /* ElPraGatoUITests.swift */; };
 		33878AC02A0AA4D50086705B /* ElPraGatoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33878ABF2A0AA4D50086705B /* ElPraGatoUITestsLaunchTests.swift */; };
 		33878ACE2A0AB5300086705B /* MainStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33878ACD2A0AB5300086705B /* MainStorage.swift */; };
+		33878AF42A0C4FB40086705B /* MainGatoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33878AF32A0C4FB40086705B /* MainGatoViewModel.swift */; };
+		33878AF62A0C53DF0086705B /* MainGatoViewContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33878AF52A0C53DF0086705B /* MainGatoViewContent.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +68,8 @@
 		33878AED2A0BCBED0086705B /* Poppins-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
 		33878AEE2A0BCBED0086705B /* Poppins-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Thin.ttf"; sourceTree = "<group>"; };
 		33878AEF2A0BCBED0086705B /* Poppins-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-LightItalic.ttf"; sourceTree = "<group>"; };
+		33878AF32A0C4FB40086705B /* MainGatoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainGatoViewModel.swift; sourceTree = "<group>"; };
+		33878AF52A0C53DF0086705B /* MainGatoViewContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainGatoViewContent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,7 +124,7 @@
 				33878AA72A0AA4D40086705B /* ElPraGato.entitlements */,
 				33878AD02A0AB56B0086705B /* Assets */,
 				33878AD22A0AB6150086705B /* ViewModels */,
-				33878AD32A0AB6200086705B /* Models */,
+				33878AD32A0AB6200086705B /* ViewContents */,
 				33878ACF2A0AB5460086705B /* Scenes */,
 				33878ACC2A0AB5170086705B /* Storage */,
 				33878AA82A0AA4D40086705B /* Preview Content */,
@@ -182,15 +186,17 @@
 		33878AD22A0AB6150086705B /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				33878AF32A0C4FB40086705B /* MainGatoViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
-		33878AD32A0AB6200086705B /* Models */ = {
+		33878AD32A0AB6200086705B /* ViewContents */ = {
 			isa = PBXGroup;
 			children = (
+				33878AF52A0C53DF0086705B /* MainGatoViewContent.swift */,
 			);
-			path = Models;
+			path = ViewContents;
 			sourceTree = "<group>";
 		};
 		33878AD82A0BC87C0086705B /* projectFonts */ = {
@@ -350,7 +356,9 @@
 			files = (
 				33878AA42A0AA4D10086705B /* MainGatoView.swift in Sources */,
 				33878AA22A0AA4D10086705B /* ElPraGatoApp.swift in Sources */,
+				33878AF42A0C4FB40086705B /* MainGatoViewModel.swift in Sources */,
 				33878ACE2A0AB5300086705B /* MainStorage.swift in Sources */,
+				33878AF62A0C53DF0086705B /* MainGatoViewContent.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
