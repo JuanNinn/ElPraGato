@@ -83,7 +83,7 @@ import Foundation
             (viewContent.positionIdentifier[31] == viewContent.positionIdentifier[13]) {
             
             updateGameState(wishedGameState: currentTurnSign)
-        } else if numberOfPays >= 9{
+        } else if numberOfPays >= 9 {
             updateGameState(wishedGameState: "Empate")
         }
     }
