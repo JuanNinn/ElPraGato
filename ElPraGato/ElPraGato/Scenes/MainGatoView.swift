@@ -57,7 +57,6 @@ struct MainGatoView: View {
                                             .font(.system(size: 65))
                                             .frame(maxWidth: geometry.size.width * 0.33, maxHeight: geometry.size.width * 0.23)
                                             .background(Color("PrimaryContainerColor"))
-                                            .foregroundColor(Color(viewModel.currentSignColor))
                                             .onTapGesture {
                                                 viewModel.makeAPlay(section: section, row: row)
                                             }

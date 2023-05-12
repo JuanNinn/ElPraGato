@@ -20,7 +20,6 @@ import Foundation
     @Published var currentTurnSign: String = "X"
     @Published var mainButtonText = "Inicia la partida"
     @Published var isMainButtonEnable = false
-    @Published var currentSignColor = ""
     @Published var showGameState = false
     @Published var currentGameStateSheetText = ""
     
@@ -93,11 +92,9 @@ import Foundation
         if numberOfPays <= 8{
             if currentTurnSign == "X" {
                 currentGameStateSheetText = "Ganador Jugador 1"
-                currentSignColor = "SkyColor"
                 currentTurnSign = "O"
             } else {
                 currentGameStateSheetText = "Ganador Jugador 2"
-                currentSignColor = "WhiteColor"
                 currentTurnSign = "X"
             }
         } else {
