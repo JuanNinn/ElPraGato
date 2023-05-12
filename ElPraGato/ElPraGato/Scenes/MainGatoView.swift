@@ -48,6 +48,7 @@ struct MainGatoView: View {
                     .font(.custom("Poppins-Regular", size: 24))
                     .foregroundColor(Color("GrayFontColor"))
                     .disabled(!viewModel.isMainButtonEnable)
+                    
                     ZStack {
                         HStack {
                             ForEach(0..<3) { section in
@@ -55,7 +56,7 @@ struct MainGatoView: View {
                                     ForEach(0..<3) { row in
                                         Text(String(viewModel.viewContent.positionIdentifier[Int("\(section + 1)\(row + 1)") ?? 0] ?? ""))
                                             .font(.system(size: 65))
-                                            .frame(maxWidth: geometry.size.width * 0.33, maxHeight: geometry.size.width * 0.23)
+                                            .frame(maxWidth: geometry.size.width * 0.23, maxHeight: geometry.size.width * 0.23)
                                             .background(Color("PrimaryContainerColor"))
                                             .onTapGesture {
                                                 viewModel.makeAPlay(section: section, row: row)
@@ -65,16 +66,17 @@ struct MainGatoView: View {
                             }
                         }
                         .background(Color("GatoSquareColor"))
-                        .padding(50)
                         .opacity(viewModel.showGameState ? 0 : 1)
+                        
                         GameStateIndicator(winnerGameState: viewModel.currentGameStateSheetText)
                             .opacity(viewModel.showGameState ? 1 : 0)
                     }
+                    
                     Spacer()
                     Image("mainViewFooter")
                         
                 }
-                .padding(.vertical, 50)
+                .padding(.vertical, 28)
             }
             .ignoresSafeArea()
         }
