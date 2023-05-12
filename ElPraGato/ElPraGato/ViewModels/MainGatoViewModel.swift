@@ -18,14 +18,18 @@ import Foundation
                                                                           32:"",
                                                                           33:""])
     @Published var currentTurnSign: String = "X"
-    @Published var gameState = "toStart"
-    @Published var mainButtonText = ""
-    @Published var whoWins = ""
+    @Published var mainButtonText = "Inicia la partida"
+    @Published var isMainButtonEnable = false
+    @Published var currentSignColor = ""
+    @Published var showGameState = false
+    @Published var currentGameStateSheetText = ""
     
-    var numberOfPays = 0
+    private var gameState = "toStart"
+    private var whoWins = ""
+    private var numberOfPays = 0
     
-    func makeAPlay(squareId: Int) {
-        asignAPlay(squareId: squareId)
+    func makeAPlay(section: Int, row: Int) {
+        asignAPlay(squareId: Int("\(section + 1)\(row + 1)") ?? 0)
     }
     
     func asignAPlay(squareId: Int) {
@@ -35,9 +39,9 @@ import Foundation
         } else {
             
         }
-        print("\(viewContent.positionIdentifier) ")
         checkWin()
         adjustCurrentTurn()
+        updateGameState(wishedGameState: "")
     }
     
     func checkWin() {
@@ -77,32 +81,47 @@ import Foundation
             
             (viewContent.positionIdentifier[13] == currentTurnSign) &&
             (viewContent.positionIdentifier[22] == viewContent.positionIdentifier[13]) &&
-            (viewContent.positionIdentifier[31] == viewContent.positionIdentifier[13]){
+            (viewContent.positionIdentifier[31] == viewContent.positionIdentifier[13]) {
             
             updateGameState(wishedGameState: currentTurnSign)
-            print("\(currentTurnSign) Wins")
-        } else if whoWins == "" && numberOfPays >= 9{
-            print("Tie")
+        } else if numberOfPays >= 9{
+            updateGameState(wishedGameState: "Empate")
         }
     }
     
     func adjustCurrentTurn() {
-        if currentTurnSign == "X" {
-            currentTurnSign = "O"
+        if numberOfPays <= 8{
+            if currentTurnSign == "X" {
+                currentGameStateSheetText = "Ganador Jugador 1"
+                currentSignColor = "SkyColor"
+                currentTurnSign = "O"
+            } else {
+                currentGameStateSheetText = "Ganador Jugador 2"
+                currentSignColor = "WhiteColor"
+                currentTurnSign = "X"
+            }
         } else {
-            currentTurnSign = "X"
+            currentGameStateSheetText = "Empate"
         }
     }
     
     func updateGameState(wishedGameState: String) {
-        if wishedGameState != "" {
+        if wishedGameState == "X" || wishedGameState == "O" {
             gameState = "finished"
-            self.whoWins = wishedGameState
-            self.mainButtonText = ""
+            self.mainButtonText = "a"
+            self.showGameState = true
+            
+        } else if wishedGameState == "Empate" {
+            gameState = "Finished"
+            self.mainButtonText = "e"
+            self.showGameState = true
+            
         } else if wishedGameState == "" {
             gameState = "inProgress"
             self.mainButtonText = "Reiniciar"
-        } else if wishedGameState == "restart" {
+            self.isMainButtonEnable = true
+            
+        } else if wishedGameState == "toStart" {
             gameState = "toStart"
             self.mainButtonText = "Inicia la partida"
         }
@@ -119,6 +138,10 @@ import Foundation
                                                                31:"",
                                                                32:"",
                                                                33:""])
-        updateGameState(wishedGameState: "restart")
+        updateGameState(wishedGameState: "toStart")
+        isMainButtonEnable = false
+        showGameState = false
+        numberOfPays = 0
+        currentTurnSign = "X"
     }
 }
