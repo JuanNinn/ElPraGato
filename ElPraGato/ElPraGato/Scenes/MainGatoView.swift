@@ -74,7 +74,6 @@ struct MainGatoView: View {
                     
                     Spacer()
                     Image("mainViewFooter")
-                        
                 }
                 .padding(.vertical, 28)
             }
